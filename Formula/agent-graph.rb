@@ -2,7 +2,7 @@ class AgentGraph < Formula
   desc "find, print, and draw graphs of agents"
   homepage "https://github.com/agent-habilis/agent-graph"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   # The release workflow rewrites every version and digest below, matching a
   # `sha256` line only where it directly follows its `url`. Nothing may be put
@@ -11,20 +11,20 @@ class AgentGraph < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/agent-habilis/agent-graph/releases/download/v#{version}/agent-graph-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "259c4d130ffbb8be1cc0441b31f818107b6fef9e20283b2ce1bb8f70472739a9"
     else
       url "https://github.com/agent-habilis/agent-graph/releases/download/v#{version}/agent-graph-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "55aae6999bf44d5f69f33484cacba41a3c5c6da8e7488adda5eb672049c80e1c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/agent-habilis/agent-graph/releases/download/v#{version}/agent-graph-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "eda0937043d4857df4bff0caa8a2cadd3507f46232d6d570c98c2e5ec696c692"
     elsif Hardware::CPU.arm?
       url "https://github.com/agent-habilis/agent-graph/releases/download/v#{version}/agent-graph-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "f257b212a116862fa44781268dcff9a12a686a5b7f59590c82a9eb7f3b6d7e18"
     end
   end
 
