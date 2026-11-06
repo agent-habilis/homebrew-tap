@@ -2,7 +2,7 @@ class AgentGossip < Formula
   desc "mesh network for agents"
   homepage "https://github.com/agent-habilis/agent-gossip"
   license "MIT"
-  version "0.12.10"
+  version "0.13.0"
 
   # The release workflow rewrites every version and digest below, matching a
   # `sha256` line only where it directly follows its `url`. Nothing may be put
@@ -11,20 +11,20 @@ class AgentGossip < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/agent-habilis/agent-gossip/releases/download/v#{version}/agent-gossip-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "8708b59f4b27d57f41fb296cdf1cc128b763caff376c8a3e085ca2cb75997510"
+      sha256 "25b66f271383a31d2277b91faf1279874a6d11bf788b6751a945513d7762faca"
     else
       url "https://github.com/agent-habilis/agent-gossip/releases/download/v#{version}/agent-gossip-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "41600b63977491174c01e98de783272124dadabe9ae7a3a95025de58a8765523"
+      sha256 "30ead9911483eeeeb32c17c88818c3acfa92426d39296f697983b8861985a92a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/agent-habilis/agent-gossip/releases/download/v#{version}/agent-gossip-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "90377bf0abb621e20d70c84573068be51fff5d3c840cdb9b360733bfd1ec7f6b"
+      sha256 "5dfb8481299f4bc37d1fc0e64f21cf481d98752dd72b93671bb132dc5efe8820"
     elsif Hardware::CPU.arm?
       url "https://github.com/agent-habilis/agent-gossip/releases/download/v#{version}/agent-gossip-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "53d06c1ddfec7b7b85b074cec3399e179c2a0de57321d2ae04301818680ec05a"
+      sha256 "9b49b22b98620e2a1965977114d8da510c2a7d9eedb46971aaf78a32b0dcc78a"
     end
   end
 
