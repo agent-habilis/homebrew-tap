@@ -10,5 +10,6 @@ repository.
 | --- | --- | --- |
 | `agent-gossip` | `brew install agent-habilis/tap/agent-gossip` | [agent-habilis/agent-gossip](https://github.com/agent-habilis/agent-gossip) |
 | `agent-graph` | `brew install agent-habilis/tap/agent-graph` | [agent-habilis/agent-graph](https://github.com/agent-habilis/agent-graph) |
+| `agent-knowledge` | `brew install agent-habilis/tap/agent-knowledge` | [agent-habilis/agent-knowledge](https://github.com/agent-habilis/agent-knowledge) |
 | `agent-jail` | `brew install agent-habilis/tap/agent-jail` | [agent-habilis/agent-jail](https://github.com/agent-habilis/agent-jail) |
 | `agent-share` | `brew install agent-habilis/tap/agent-share` | [agent-habilis/agent-share](https://github.com/agent-habilis/agent-share) |
